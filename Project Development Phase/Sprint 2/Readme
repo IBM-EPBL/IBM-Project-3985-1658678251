@@ -2,4 +2,5 @@ Sprint - 2
   * Home page
   * Setting up facilities for user to feed the image
   * Prediction page creation
+  * Model loading – API creation using flask
   
