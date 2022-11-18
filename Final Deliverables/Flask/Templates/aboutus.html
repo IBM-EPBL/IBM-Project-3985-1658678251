@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Naturalist</title>
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Montserrat&family=Raleway:wght@100&family=Roboto:wght@300&family=Sacramento&family=Source+Sans+3:wght@300;400&display=swap');
+        body{
+      font-family: 'Montserrat', sans-serif;
+      background-image: linear-gradient( 89.8deg, rgb(13, 95, 33) 4.7%, rgba(30, 29, 29, 1) 120.3%);
+	  margin: 0;
+	  text-decoration: none;
+    }
+		
+	
+
+
+	nav{
+      background-color: black;
+      height:45px;
+      width: 100%;
+      padding: 0;
+      display:inline-block;
+      margin-bottom: 0!important;
+    }
+    .logo{
+      height: 45px; width:45px; line-height: 45px;
+
+    }
+    .lab{
+      color:  linear-gradient( 89.8deg, rgb(13, 95, 33) 4.7%, rgba(30, 29, 29, 1) 120.3%);;
+      font-size: 20px;
+      line-height: 45px;     
+      margin-left: 0;
+      margin-top: 0px;
+      margin-bottom: 20px;
+      padding: 4px 5px 25px 2px;
+      text-transform: uppercase;
+      position: absolute;
+
+      background: #15BD0F;
+      background: linear-gradient(to right, #15BD0F 0%, #085a06 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+    }
+    
+    nav ul{
+      float:right;
+      color:white;
+      margin-right: 15px;
+      padding-left: 50px;
+      margin-top: 0px;
+      line-height: 45px;
+
+    }
+    nav ul li{
+      display:inline-block;
+      padding-left: 25px;
+      padding-top: 0px;
+      line-height: 45px;
+    }
+    nav ul li a{
+      color:white;
+      text-transform: uppercase;
+      font-size: 15px;
+      text-decoration: none;
+    }
+    nav ul li a:hover{
+      color:rgb(37, 145, 64);
+      transition:.5s;
+      text-decoration: none;
+    }
+    .container{
+      width:75vw;
+      height: 65vh;
+      padding:5% 13% 8% 13%;
+      align-content: center;
+    }
+
+    .content{
+      width:100%;
+      height:100%;
+      background-color: black;
+      box-shadow: 10px 10px 28px 20px rgb(8, 31, 11);
+      border-radius: 18px;
+      
+    }
+	
+    .team{
+      color: white;
+      
+    }
+    .team li{
+      list-style: none;
+      font-size: large;
+      padding: 8px 0px 0px 16px;
+    }
+
+    
+    </style>
+
+
+
+
+</head>
+<body>
+    <nav> 
+        <img class="logo" src="../static/images/greentree-removebg-preview.png" >
+        <label class="lab">Digital Naturalist</label>
+        <ul>
+          <li><a href="{{url_for('home_func')}}">Home</a></li>
+          <li><a href="{{url_for('aboutus_func')}}">About us</a></li>
+        </ul>
+      </nav> 
+      <div class="container">
+        <div class="content">
+            <h2 style="padding: 25px 0px 0px 25px;color: #085a06; "> Digital Naturalist – AI Enabled tool for
+              Biodiversity Researchers </h2>
+            <p style="padding: 8px 35px 0px 25px; color:white; font-size: large; text-align: justify;">  
+              <span style="display:inline-block; ">    </span>
+              <span style="display:inline-block; ">    </span>
+              <span style="display:inline-block; ">    </span>
+              This project is a tool that predicts the uploaded flora and fauna image of the user and displays a description about it.
+               It benefits the inquistive naturalists and influencers to know more about the environment.</p>
+            <h2 style="padding: 15px 0px 0px 25px;color: #085a06; ">Team Members</h2>
+            <ul class="team">
+              <li >K Vijayalakshmi - 211419104303</li>
+              <li >B Rakshana - 211419104212</li>
+              <li >K Swetha -   211419104284</li>
+              <li >S Swetha -  211419104286</li>
+              
+              
+            </ul>
+        </div>
+        
+
+      </div>           
+    
+</body>
+</html>

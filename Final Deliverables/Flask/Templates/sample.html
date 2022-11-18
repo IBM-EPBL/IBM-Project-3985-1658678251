@@ -1,0 +1,292 @@
+<html>
+	<head>
+	<title>Digital Naturalist</title>
+	<link rel="spreadsheet" type="text/css" href="styles.css">
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet'>
+	<script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Montserrat&family=Raleway:wght@100&family=Roboto:wght@300&family=Sacramento&family=Source+Sans+3:wght@300;400&display=swap');
+        body{
+      font-family: 'Montserrat', sans-serif;
+      background-image: linear-gradient( 89.8deg, rgb(13, 95, 33) 4.7%, rgba(30, 29, 29, 1) 120.3%);
+	  margin: 0;
+	  text-decoration: none;
+    }
+		
+	
+
+
+	nav{
+      background-color: black;
+      height:45px;
+      width: 100%;
+      padding: 0;
+      display:inline-block;
+      margin-bottom: 0!important;
+    }
+    .logo{
+      height: 45px; width:45px; line-height: 45px;
+
+    }
+    .lab{
+      color:  linear-gradient( 89.8deg, rgb(13, 95, 33) 4.7%, rgba(30, 29, 29, 1) 120.3%);;
+      font-size: 20px;
+      line-height: 45px;     
+      margin-left: 0;
+      margin-top: 0px;
+      margin-bottom: 20px;
+      padding:5 5 25 25;
+      text-transform: uppercase;
+      position: absolute;
+
+      background: #15BD0F;
+      background: linear-gradient(to right, #15BD0F 0%, #063804 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+    }
+    
+    nav ul{
+      float:right;
+      color:white;
+      margin-right: 15px;
+      padding-left: 50px;
+      line-height: 45px;
+
+    }
+    nav ul li{
+      display:inline-block;
+      padding-left: 25px;
+    }
+    nav ul li a{
+      color:white;
+      text-transform: uppercase;
+      font-size: 15px;
+    }
+    nav ul li a:hover{
+      color:rgb(37, 145, 64);
+      transition:.5s;
+	  text-decoration: none;
+    }
+	
+
+
+
+
+
+	#showcase{
+	height:300px;
+	margin-bottom:30px;
+}
+html {
+  scroll-behavior: smooth;
+}
+#main{
+	float:center;
+	color:white;
+	width:100%;
+	padding:0 30px;
+	padding-top:7%;
+	box-sizing: border-box;
+	font-size: 70px;
+	text-align:center;
+	font-weight: 400;
+}
+
+
+
+
+#sidebar{
+	float:right;
+	width:50%;
+	background-color: transparent;
+	color:#000;
+	font-family:Georgia, serif;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:1px;
+	box-sizing: border-box;
+}	
+.img-preview {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    border: 5px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+    margin-bottom: 1em; 
+	
+	text-align: center;
+}
+
+.img-preview>div {
+	padding-left: 45%;
+    width: 100%;
+    height: 100%;
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+	text-align: center;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.upload-label{
+    display: inline-block;
+    padding: 12px 30px;
+    background: #161616;
+    color: #fff;
+    font-size: 1em;
+    transition: all .4s;
+    cursor: pointer;
+	font-weight:bold;
+}
+
+.upload-label:hover{
+    background: #3A3A3A;
+    color: white;
+	font-weight:bold;
+}
+
+.loader {
+    border: 8px solid #f3f3f3; /* Light grey */
+    border-top: 8px solid #161616; 
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+		</style>
+	</head>
+	<body>
+		
+        <nav> 
+			<img class="logo" src="../static/images/greentree-removebg-preview.png" >
+			<label class="lab">Digital Naturalist</label>
+			<ul>
+			  <li><a href="home.html">Home</a></li>
+			  <li><a href="aboutus.html">About us</a></li>
+			</ul>
+		  </nav>
+		
+		
+		<div class="predicting" id="section2" >
+			<section id="main">
+    	<div style="text-align:center;width:100%;">
+			<p><h3 >Click on choose and upload the image<br><br></h3></p>
+			
+        </div>
+        </section>
+	</div>
+		<div style="margin-top:0%;padding-top:0%;">
+				<div>
+					<h4 style="font-size:19px;text-align:center;color:white; padding-bottom:30px ; ">Upload your image</h4>
+			<center><form style="border-radius: 4px;"action = "http://localhost:5000/" id="upload-file" method="post" enctype="multipart/form-data">
+				<label style="text-align: center;"for="imageUpload" class="upload-label">
+					Choose
+				</label>
+				<input type="file" name="image" id="imageUpload" accept=".png, .jpg, .jpeg">
+			</form></center>
+			
+
+			<div class="image-section" style="display:none;text-align:center;padding-left: 40%;">
+				<div class="img-preview">
+					<div id="imagePreview">
+					</div>
+				</div>
+				</div>
+				<br>
+			<div class="image-section" style="display:none;">
+				<div style="padding-left: 45%;">
+					<button type="button" class="btn btn-lg upload-label" id="btn-predict">Predict!</button>
+				</div>
+			</div>
+
+			<div class="loader" style="display:none;"></div>
+			<div style="width:70%;text-align:justify;margin-left:20%;">
+			<h4>
+				<span id="result"> </span>
+			</h4></div>
+		
+	</div>
+	
+	</div></div>
+	<script>
+window.onscroll = function() {myFunction()};
+
+$(document).ready(function () {
+    // Init
+    $('.image-section').hide();
+    $('.loader').hide();
+    $('#result').hide();
+
+    // Upload Preview
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#imagePreview').css('background-image', 'url(' + e.target.result + ')');
+                $('#imagePreview').hide();
+                $('#imagePreview').fadeIn(650);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $("#imageUpload").change(function () {
+        $('.image-section').show();
+        $('#btn-predict').show();
+        $('#result').text('');
+        $('#result').hide();
+        readURL(this);
+    });
+
+    // Predict
+    $('#btn-predict').click(function () {
+        var form_data = new FormData($('#upload-file')[0]);
+
+        // Show loading animation
+        $(this).hide();
+        $('.loader').show();
+
+        // Make prediction by calling api /predict
+        $.ajax({
+            type: 'POST',
+            url: '/predict',
+            data: form_data,
+            contentType: false,
+            cache: false,
+            processData: false,
+            async: true,
+            success: function (data) {
+                // Get and display the result
+                $('.loader').hide();
+                $('#result').fadeIn(600);
+                $('#result').text('Prediction: '+data);
+                console.log('Success!');
+            },
+        });
+    });
+
+});
+</script>
+	
+	
+	
+	</body>
+</html>
